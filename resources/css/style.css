@@ -1,0 +1,422 @@
+/*BASE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555555;
+  font-family: "lato", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.row {
+  max-width: 114rem;
+  /*centering the layout top bottom 0 left right auto*/
+  margin: 0 auto;
+}
+
+/*HEADING*/
+
+header {
+  /*always store the images the same place as the doc of  style sheet*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 114rem;
+  top: 50%;
+  left: 50%;
+  /*moves 50% internaly*/
+  transform: translate(-50%, -50%);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 6rem;
+  word-spacing: 0.3rem;
+}
+
+h2 {
+  font-size: 4rem;
+  word-spacing: 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h2:after {
+  display: block;
+  height: 0.2rem;
+  background-color: #e67e22;
+  content: "";
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 2rem;
+}
+
+.box {
+  padding: 1%;
+}
+
+.box p {
+  font-size: 1.8rem;
+}
+
+.logo {
+  height: 10rem;
+  width: auto;
+  float: left;
+  margin-top: 2rem;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 6rem;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 4rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  /*to add a bottom border*/
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.5rem;
+  transition: all 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+/*BUTTON*/
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 50rem;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  color: #ffffff;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  margin-right: 1.5rem;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  color: #e67e22;
+  border: 1px solid #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  color: #ffffff;
+  border: 1px solid #cf6d17;
+}
+
+/*SECTION FEATURES*/
+
+svg {
+  height: 5rem;
+  width: auto;
+  color: #e67e22;
+}
+
+.section-features .long-copy {
+  margin-bottom: 3rem;
+}
+
+/*
+hover effect on image
+
+1st scale the image 115%
+2nd set the seen overflow to hidden on the container element
+3nd On hover scale it back
+4nd Animate 
+
+to darken it
+
+1st set the opacity on the affect image
+2nd darken the container 
+*/
+
+section {
+  padding: 8rem 0;
+}
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.meal-photo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/*How it works*/
+
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 3rem;
+}
+
+.step-box:last-child {
+  padding-left: 3%;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 5rem;
+}
+
+.works-step div {
+  color: #e67e22;
+  border: 1px solid #e67e22;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+  float: left;
+  padding: 0.5rem;
+  font-size: 3rem;
+  margin-right: 2.5rem;
+  display: inline-block;
+}
+
+.works-step p {
+  font-size: 2rem;
+}
+
+.btn-app img {
+  height: 5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 8rem;
+}
+
+/* Cities */
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.city-feature {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+h3 ul {
+  list-style: none;
+}
+
+.city-feature svg {
+  display: inline-block;
+  width: 3rem;
+  color: #e67e22;
+  font-size: 2.2rem;
+}
+
+.city-feature p {
+  margin-left: 48px;
+  margin-top: -32px;
+}
+
+/*Testimonals*/
+.section-testimonals {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+blockquote {
+  font-size: 4rem;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+  margin-top: 4rem;
+}
+
+blockquote::before {
+  content: "\201C";
+  display: block;
+  position: absolute;
+  top: -8rem;
+  left: -2rem;
+  font-size: 500%;
+}
+
+cite {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 5rem;
+  display: block;
+}
+
+cite img {
+  height: 25%;
+  border-radius: 50%;
+  margin-right: 4rem;
+  vertical-align: middle;
+}
+
+/*Sign up section*/
+
+.section-SignUp {
+  background-color: #f4f4f4f4;
+}
+
+.plan-box {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.plan-box div {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+  background-color: #fcfcfc;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+}
+
+
+.price-plan {
+  font-size: 6rem;
+  font-weight: 100;
+  color: #e67e22;
+  margin-bottom: 1rem;
+}
+
+.price-plan span {
+  font-size: 30%;
+}
+
+.price-plan-meal {
+  font-size: 2rem;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: .5rem 0;
+  font-size: 2rem;
+}
+
+.plan-box ul li svg {
+  vertical-align: middle;
+  width: 2rem;
+}
