@@ -257,8 +257,9 @@ section {
   margin-top: 3rem;
 }
 
-.step-box:last-child {
+.steps-box:last-child {
   padding-left: 3%;
+  margin-top: 10rem;
 }
 
 .app-screen {
@@ -400,7 +401,7 @@ cite img {
 }
 
 .price-plan span {
-  font-size: 30%;
+  font-size: 50%;
 }
 
 .price-plan-meal {

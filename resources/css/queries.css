@@ -1,0 +1,140 @@
+/*here we will set our media queries which  be applied when the width is less or equal to the screen width */
+/* Big tablets  to 1200 which is less than 1400px which is the row width*/
+@media only screen and (max-width : 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/* Small tablets to big tablets: from 768 to 1023 px*/
+@media only screen and (max-width : 1023px) {
+    html {
+        font-size: 50%;
+    }
+
+    section {
+        padding: 6rem 0;
+    }
+
+    .steps-box:last-child {
+        margin-top: 10rem;
+    }
+
+    .works-step {
+        margin-bottom: 4rem;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 6rem;
+    }
+
+    .app-screen {
+        width: 50%;
+    }
+
+    .plan-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .price-plan {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+}
+
+/* Small phones to small tablets  from 481 to 767px*/
+@media only screen and (max-width : 767px) {
+    html {
+        font-size: 100%;
+    }
+
+    .logo {
+        height: 6rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .btn:link,
+    .btn:visited {
+        padding: .5rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    blockquote {
+        font-size: 3rem;
+    }
+
+    .works-step div {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1.5rem;
+        padding: .4rem;
+        font-size: 230%;
+    }
+
+    .long-copy {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+
+    .steps-box:first-child {
+        text-align: center;
+    }
+
+    .city-feature p {
+        margin-left: 65px;
+        margin-top: -62px;
+    }
+
+    .box p {
+        font-size: 1.5rem;
+    }
+
+    .plan-box div:last-child {
+        font-size: 3rem;
+    }
+}
+
+/* Small phones from 0 to 480*/
+@media only screen and (max-width : 480px) {
+    blockquote {
+        font-size: 2rem;
+    }
+
+    blockquote::before {
+        top: -3rem;
+        left: 0rem;
+        font-size: 250%;
+    }
+}
