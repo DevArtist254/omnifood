@@ -420,3 +420,57 @@ cite img {
   vertical-align: middle;
   width: 2rem;
 }
+
+/*Footer*/
+footer {
+  background-color: #4d4d4d;
+  padding: 5rem;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+  vertical-align: middle;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  color: #000000;
+  width: 4rem;
+  font-size: 2.5rem;
+  transition: color .2s;
+}
+
+.footer-nav li a:active,
+.footer-nav li a:hover,
+.social-links li a:active,
+.social-links li a:hover {
+  color: #ffffff;
+}
+
+footer p {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #000000;
+  margin-top: 2.5rem;
+}
