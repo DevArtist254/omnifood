@@ -11,3 +11,8 @@ to darken it
 
 1st set the opacity on the affect image
 2nd darken the container
+
+#######################
+J - Query Study
+
+Navigations
