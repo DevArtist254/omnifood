@@ -112,6 +112,12 @@ h3 {
   margin-top: 2rem;
 }
 
+.logo-black {
+  display: none;
+}
+
+/*Main Nav*/
+
 .main-nav {
   float: right;
   list-style: none;
@@ -126,6 +132,7 @@ h3 {
 .main-nav li a:link,
 .main-nav li a:visited {
   text-decoration: none;
+  padding: 0.8rem 0px;
   color: white;
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -138,6 +145,43 @@ h3 {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/*Sticky Nav*/
+
+.main-nav {
+  margin-top: 1.78rem;
+}
+
+.logo-black {
+  display: none;
+  height: 5rem;
+  width: auto;
+  float: left;
+  margin-top: 0.5rem;
+}
+/*Navigation No. 2 */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0.2rem 3.2rem #dadada;
+  z-index: 3;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 1.6rem 0px;
+  color: #5e5e5e;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
 }
 
 /*BUTTON*/
@@ -250,7 +294,6 @@ section {
 
 /*How it works*/
 
-
 .steps-box:first-child {
   text-align: right;
   padding-right: 3%;
@@ -328,7 +371,8 @@ h3 ul {
 
 /*Testimonals*/
 .section-testimonals {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/back-customers.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -392,7 +436,6 @@ cite img {
   text-align: center;
 }
 
-
 .price-plan {
   font-size: 6rem;
   font-weight: 100;
@@ -413,7 +456,7 @@ cite img {
 }
 
 .plan-box ul li {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 2rem;
 }
 
@@ -450,7 +493,6 @@ footer {
   margin-right: 0;
 }
 
-
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
@@ -459,7 +501,7 @@ footer {
   color: #000000;
   width: 4rem;
   font-size: 2.5rem;
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .footer-nav li a:active,

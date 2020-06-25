@@ -16,3 +16,9 @@ to darken it
 J - Query Study
 
 Navigations
+
+1. first create a class with a Sticky Nav
+2. add style to the sheet
+   2.2 Main property position fixed
+   2.3 with the position the on the top of the page with 100% width
+   2.4 then change the styles to suit the sticky class and being with .sticky inorder to active it
