@@ -149,7 +149,7 @@ h3 {
 
 /*Sticky Nav*/
 
-.main-nav {
+.sticky .main-nav {
   margin-top: 1.78rem;
 }
 
@@ -160,6 +160,7 @@ h3 {
   float: left;
   margin-top: 0.5rem;
 }
+
 /*Navigation No. 2 */
 .sticky {
   position: fixed;
@@ -180,6 +181,7 @@ h3 {
 .sticky .logo {
   display: none;
 }
+
 .sticky .logo-black {
   display: block;
 }
@@ -516,4 +518,24 @@ footer p {
   text-align: center;
   color: #000000;
   margin-top: 2.5rem;
+}
+
+/*Animations*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-4 {
+  animation-duration: 4s;
+}
+
+/*Here we will combine both selectors to*/
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
 }

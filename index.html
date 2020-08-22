@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="vendors/css/1.3 grid.css" />
   <link rel="stylesheet" href="resources/css/style.css" />
   <link rel="stylesheet" href="resources/css/queries.css" />
+  <link rel="stylesheet" href="vendors/css/animate.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
     rel="stylesheet" />
   <title>Omnifood</title>
@@ -21,10 +22,10 @@
         <img src="resources/images/logo-white.png" alt="Omnifood logo" class="logo" />
         <img src="resources/images/logo.png" alt="Omnifood logo" class="logo-black" />
         <ul class="main-nav">
-          <li><a href="#"> Food delivery </a></li>
-          <li><a href="#">How it works </a></li>
-          <li><a href="#">Our cities </a></li>
-          <li><a href="#">Sign up</a></li>
+          <li><a href="#meals"> Food delivery </a></li>
+          <li><a href="#works">How it works </a></li>
+          <li><a href="#cities">Our cities </a></li>
+          <li><a href="#signUp">Sign up</a></li>
         </ul>
       </div>
     </nav>
@@ -33,8 +34,8 @@
         Goodbye junk food. <br />
         Hello super healthy meals.
       </h1>
-      <a class="btn btn-full" href="#">I’m hungry</a>
-      <a class="btn btn-ghost" href="#">Show me more</a>
+      <a class="btn btn-full scrollToSignUp" href="#">I’m hungry</a>
+      <a class="btn btn-ghost effects" href="#">Show me more</a>
     </div>
   </header>
 
@@ -47,7 +48,7 @@
         we’re really good at it, we promise!
       </p>
     </div>
-    <div class="row">
+    <div class="row js--wp-1">
       <div class="col span-1-of-4 box">
         <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
           <title>ionicons-v5-j</title>
@@ -182,7 +183,7 @@
     </div>
   </section>
 
-  <section class="section-meals">
+  <section class="section-meals" id="meals">
     <ul class="meals-showcase clearfix">
       <li>
         <figure class="meal-photo">
@@ -229,13 +230,13 @@
     </ul>
   </section>
 
-  <section class="section-steps">
+  <section class="section-steps" id="works">
     <div class="row">
       <h2>How it works &mdash; Simple as 1, 2, 3</h2>
     </div>
     <div class="row">
       <div class="col span-1-of-2 steps-box">
-        <img src="resources/images/app-iPhone.png" alt="iphone picture of the app" class="app-screen" />
+        <img src="resources/images/app-iPhone.png" alt="iphone picture of the app" class="app-screen js--wp-2" />
       </div>
       <div class="col span-1-of-2 steps-box">
         <div class="works-step">
@@ -270,11 +271,11 @@
     </div>
   </section>
 
-  <section class="section-cities">
+  <section class="section-cities" id="cities">
     <div class="row">
       <h2>We're currently in these cities</h2>
     </div>
-    <div class="row">
+    <div class="row js--wp-3">
       <div class="col span-1-of-4 box">
         <img src="resources/images/lisbon-3.jpg" alt="lisbon" />
         <h3>Lisbon</h3>
@@ -505,13 +506,13 @@
     </div>
   </section>
 
-  <section class="section-SignUp">
+  <section class="section-SignUp" id="signUp">
     <div class="row">
       <h2>Start eating healthy today</h2>
     </div>
     <div class="row">
       <div class="col span-1-of-3">
-        <div class="plan-box">
+        <div class="plan-box js--wp-4">
           <div>
             <h3>Premium</h3>
             <p class="price-plan">399$ <span>/ month</span></p>
